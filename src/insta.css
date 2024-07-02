@@ -1,16 +1,15 @@
 #slideBar{
     position:fixed;
-    width:75px;
+    width:53px;
     height: 100vh;
     border-right: 1px solid rgba(0, 0, 0, 0.219);
 }
 @media(min-width:1200px){
     #slideBar{
-        width:230px;
+        width:245px;
     }
 }
 .allIcon:hover{
-    /* border:1px solid; */
     border-radius: 12px;
     background-color: rgba(51, 49, 49, 0.151);
 }
