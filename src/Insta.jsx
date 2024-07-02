@@ -35,30 +35,33 @@ useEffect(() => {
       ]; 
     return (
     <div  id="slideBar">
-      <div className="ps-2"><div className="p-3 ps-2 d-xl-none"><FaInstagram size={size}/></div>
+      <div className="ps-2 allIcon m-2"><div className="p-3 ps-2 d-xl-none"><FaInstagram size={size}/></div>
         <img src={insta} className="d-none d-xl-inline" style={{height:'70px',width:'160px'}} alt="" />
       </div>
       <div>
         {iconArray.map((val,ind)=>{
             return (
-                <div className="p-3" key={ind}>
+              <div  key={ind} className="allIcon m-2">
+                <div className="p-3">
                 {val.icon}
                 <span className="ps-2 d-none d-xl-inline">{val.label}</span>
               </div>
+              </div>
             )
         })}
-          <div className="p-3">
-                <img className="rounded-circle" style={{ width: `${size}px`, height: `${size}px` }} src={profile} alt="" />
+          <div className="p-2 pt-3 pb-3 ms-2 me-2  allIcon">
+            <img className="rounded-circle ms-2" style={{ width: `${size}px`, height: `${size}px` }} src={profile} alt="" />
                 <span className="ps-2 d-none d-xl-inline">Profile</span>
+             
 
               </div>
        </div>
-       <div style={{position:'absolute', bottom:'0px'}}>
-       <div className="p-3">
+       <div style={{position:'absolute', bottom:'0px',width:'100%'}}>
+       <div className="p-3 allIcon m-2">
                 <FaThreads size={size}/>
                 <span className="ps-2 d-none d-xl-inline">Threads</span>
               </div>
-              <div className="p-3">
+              <div className="p-3 allIcon m-2">
                 <PiList size={size}/>
                 <span className="ps-2 d-none d-xl-inline">More</span>
               </div>

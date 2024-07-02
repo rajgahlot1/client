@@ -6,7 +6,7 @@ const PathTo = () => {
   return (
     <BrowserRouter>
     <Routes>
-        <Route path="/" element={<Insta/>}  />
+        <Route path="/client" element={<Insta/>}  />
     </Routes>
     </BrowserRouter>
   )
