@@ -12,17 +12,17 @@ import profile from './Imgs/profile.jpg'
 
 const Insta = () => {
     const iconArray = [
-        { label: 'Home', icon: <MdHomeFilled size={20}  /> },
-        { label: 'Search', icon: <AiOutlineSearch size={20} /> },
-        { label: 'Explore', icon: <MdOutlineExplore size={20}  /> },
-        { label: 'Reels', icon: <SiYoutubeshorts size={20}  /> },
-        { label: 'Messenger', icon: <RiMessengerLine size={20} /> },
-        { label: 'Love', icon: < FaRegHeart size={20} /> },
-        { label: 'Create', icon: <LuPlusSquare size={20} /> }
+        { label: 'Home', icon: <MdHomeFilled size={25}  /> },
+        { label: 'Search', icon: <AiOutlineSearch size={25} /> },
+        { label: 'Explore', icon: <MdOutlineExplore size={25}  /> },
+        { label: 'Reels', icon: <SiYoutubeshorts size={25}  /> },
+        { label: 'Messenger', icon: <RiMessengerLine size={25} /> },
+        { label: 'Love', icon: < FaRegHeart size={25} /> },
+        { label: 'Create', icon: <LuPlusSquare size={25} /> }
       ]; 
     return (
     <div  id="slideBar">
-      <div className="allIcon m-2"><div className="p-2 ps-2 d-xl-none"><FaInstagram size={20}/></div>
+      <div className="allIcon m-2"><div className="p-2 ps-2 d-xl-none"><FaInstagram size={25}/></div>
         <img src={insta} className="d-none d-xl-inline" style={{height:'70px',width:'160px'}} alt="" />
       </div>
       <div>
@@ -37,7 +37,7 @@ const Insta = () => {
             )
         })}
           <div className="p-2 ps-0 pt-2 pb-2 ms-2 me-2  allIcon">
-            <img className="rounded-circle ms-2" style={{ width:"20px", height:"20px"}} src={profile} alt="" />
+            <img className="rounded-circle ms-2" style={{ width:"25px", height:"25px"}} src={profile} alt="" />
                 <span className="ps-2 d-none d-xl-inline">Profile</span>
              
 
@@ -45,11 +45,11 @@ const Insta = () => {
        </div>
        <div style={{position:'absolute', bottom:'0px',width:'100%'}}>
        <div className="allIcon m-2 p-2">
-                <FaThreads size={20}/>
+                <FaThreads size={25}/>
                 <span className="p-2 ps-2 d-none d-xl-inline">Threads</span>
               </div>
               <div className=" allIcon m-2 p-2">
-                <PiList size={20}/>
+                <PiList size={25}/>
                 <span className="p-2 ps-2 d-none d-xl-inline">More</span>
               </div>
        </div>

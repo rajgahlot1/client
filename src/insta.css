@@ -1,6 +1,6 @@
 #slideBar{
     position:fixed;
-    width:53px;
+    width:58px;
     height: 100vh;
     border-right: 1px solid rgba(0, 0, 0, 0.219);
 }
