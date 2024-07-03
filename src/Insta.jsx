@@ -71,10 +71,10 @@ const Insta = () => {
                 fill-rule="evenodd"
               ></path>
             </svg>
-            <FaChevronDown size={20} className="ms-1 mb-1"/>
+            <FaChevronDown size={15} className="ms-1 mb-1 pe-3"/>
           </div>
-          <div className="d-flex">   <div className="d-flex flex-row mt-2" style={{borderRadius: "10px",
-            backgroundColor: "rgba(51, 49, 49, 0.351)",height:'36px'}}><AiOutlineSearch size={25} className="mt-1 ms-2 me-2 text-dark"/>
+          <div className="d-flex">   <div className="d-flex flex-row mt-1" style={{borderRadius: "10px",
+            backgroundColor: "rgba(51, 49, 49, 0.351)"}}><AiOutlineSearch size={18} className="mt-1 ms-2 me-2 text-dark"/>
             <input
             className="text-dark"
               type="text"
@@ -86,7 +86,7 @@ const Insta = () => {
             backgroundColor:"transparent",
               }}
             />
-          </div><FaRegHeart size={22} className="ms-2 mt-3"/>
+          </div><FaRegHeart size={22} className="ms-2 mt-2"/>
 </div>
         </div>
         <div className="allIcon m-2">
