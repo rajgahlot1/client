@@ -2,14 +2,29 @@
     position:fixed;
     width:58px;
     height: 100vh;
-    border-right: 1px solid rgba(0, 0, 0, 0.219);
+}
+@media(min-width:768px){
+        #slideBar{
+        border-right: 1px solid rgba(0, 0, 0, 0.219);
+        }
 }
 @media(min-width:1200px){
     #slideBar{
         width:245px;
     }
 }
-.allIcon:hover{
+/* @media(min-width:768px){ */
+    .allIcon:hover{
     border-radius: 12px;
     background-color: rgba(51, 49, 49, 0.151);
+    cursor:pointer;
+}
+/* } */
+@media(max-width:767px){
+    .mainIcons{
+        border-top: 1px solid rgba(0, 0, 0, 0.219);
+        bottom:0;
+        width:100%;
+        justify-content: space-around;
+    }
 }
