@@ -51,9 +51,9 @@ const Insta = () => {
       <div id="slideBar" className="position-fixed">
         <div
           className="header d-md-none position-fixed d-flex w-100 align-items-center justify-content-between"
-          style={{ height: "60px", padding: "0 16px" }}
+          style={{ padding:"10px" }}
         >
-          <div className="pt-2 allIcon d-flex align-items-center " style={{ width: "395px" }}>
+          <div className="allIcon d-flex align-items-center " style={{ width: "395px" }}>
             <svg
               aria-label="Instagram"
               class="x1lliihq x1n2onr6 x5n08af"
@@ -71,10 +71,10 @@ const Insta = () => {
                 fill-rule="evenodd"
               ></path>
             </svg>
-            <FaChevronDown size={15} className="ms-1 mb-1 pe-3"/>
+            <FaChevronDown size={15} className=""/>
           </div>
-          <div className="d-flex">   <div className="d-flex flex-row mt-1" style={{borderRadius: "10px",
-            backgroundColor: "rgba(51, 49, 49, 0.351)"}}><AiOutlineSearch size={18} className="mt-1 ms-2 me-2 text-dark"/>
+          <div className="d-flex">   <div className="d-flex align-items-center flex-row" style={{borderRadius: "10px",
+            backgroundColor: "rgba(51, 49, 49, 0.351)"}}><AiOutlineSearch size={18} className="ms-1" />
             <input
             className="text-dark"
               type="text"
@@ -86,7 +86,7 @@ const Insta = () => {
             backgroundColor:"transparent",
               }}
             />
-          </div><FaRegHeart size={22} className="ms-2 mt-2"/>
+          </div><FaRegHeart size={20} className="m-1"/>
 </div>
         </div>
         <div className="allIcon m-2">
