@@ -4,10 +4,10 @@ import man2 from './Imgs/man2.jpeg'
 import man3 from './Imgs/man3.jpeg'
 import man4 from './Imgs/man4.jpeg'
 import man5 from './Imgs/man5.jpeg'
-// import man6 from './Imgs/man6.jpeg'
-// import man7 from './Imgs/man7.jpeg'
-// import man8 from './Imgs/man8.jpeg'
-// import man9 from './Imgs/man9.jpeg'
+import man6 from './Imgs/man6.jpeg'
+import man7 from './Imgs/man7.jpeg'
+import man8 from './Imgs/man8.jpeg'
+import man9 from './Imgs/man9.jpeg'
 export const peopleImgs = [
     {
         img: man1,
@@ -29,20 +29,20 @@ export const peopleImgs = [
         img: man5,
         id: 'ethan_walker#343',
     },
-    // {
-    //     img: man6,
-    //     id: 'fiona_hall@343',
-    // },
-    // {
-    //     img: man7,
-    //     id: 'george_y#oung',
-    // },
-    // {
-    //     img: man8,
-    //     id: 'hannah_king343@',
-    // },
-    // {
-    //     img: man9,
-    //     id: '@irene_scott#343',
-    // }
+    {
+        img: man6,
+        id: 'fiona_hall@343',
+    },
+    {
+        img: man7,
+        id: 'george_y#oung',
+    },
+    {
+        img: man8,
+        id: 'hannah_king343@',
+    },
+    {
+        img: man9,
+        id: '@irene_scott#343',
+    }
 ];

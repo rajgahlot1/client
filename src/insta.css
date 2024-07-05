@@ -1,19 +1,36 @@
-
-
+*{margin:0;
+padding:0;}
+.postData img,video{
+    width:468px;
+}
+.center-main{
+    width:630px;
+}
+.followings div div::after {
+    content: "";
+    display: block;
+    position: absolute;
+    transform: translate(-4.3%, -96%);
+    width: 61px; /* Size of the circle */
+    height: 61px; /* Size of the circle */
+    border-radius: 50%; /* Make it a circle */
+    background: linear-gradient(to top right, #ffca10, #ff2877, #db30d0);
+    z-index: -1; /* Ensure the pseudo-element is behind the image */
+}
 @media(max-width:1160px) {
-    .suggestions, .suggestoin-main {
+ .suggestion-main {
         display: none
     }
-}
+} 
 
 @media(min-width:1160px) {
-    .suggestions {
-        position: absolute;
-        right: 0px;
-        width: 319px;/* display: flex; */
-        margin-right:100px;
+    .suggestion-main{
+        margin-top:60px;
     }
-    .centerOrsuggestion{display:flex}
+    .suggestions {
+        position: relative;
+        width: 319px;
+        }
     .light-color{
         color:#636060;
     }
@@ -29,6 +46,14 @@
 }
 
 @media(min-width:768px) {
+        .allIcon:hover {
+        border-radius: 12px;
+        background-color: rgba(51, 49, 49, 0.151);
+        cursor: pointer;
+    }
+    .followings{
+        margin-top:40px;
+    }
     #slideBar {
         border-right: 1px solid rgba(0, 0, 0, 0.219);
         position: fixed;
@@ -37,12 +62,12 @@
     }
 }
 @media(min-width:768px) and (max-width:1200px){
-    .center {
+    .centerOrsuggestion {
         margin-left: 57px;
     }
 }
 @media(min-width:1200px) {
-    .center {
+    .centerOrsuggestion {
         margin-left: 245px;
     }
 
@@ -51,27 +76,22 @@
     }
 }
 
-@media(min-width:768px) {
-    
-    .allIcon:hover {
-        border-radius: 12px;
-        background-color: rgba(51, 49, 49, 0.151);
-        cursor: pointer;
-    }
-}
-
-@media(max-width:767px) {
-    .center {
+@media(max-width:768px) {
+    .centerOrsuggestion {
         margin-top: 60px;
     }
-.header{border-bottom: 1px solid rgba(0, 0, 0, 0.219); top:0;}
+.header{z-index:10;position:fixed; border-bottom: 1px solid rgba(0, 0, 0, 0.219); top:0;}
 .header .svgs{
     width:395px
-}
-    .mainIcons {
-        border-top: 1px solid rgba(0, 0, 0, 0.219);
-        bottom: 0;
-        width: 100%;
-        justify-content: space-around;
+}  
+.mainIcons {
+    border-top: 1px solid rgba(0, 0, 0, 0.219);
+    bottom: 0;
+    width: 100%;
+    justify-content: space-around;
+}}
+@media(max-width:767px){
+    .mainIcons{
+        background: white;
     }
 }
