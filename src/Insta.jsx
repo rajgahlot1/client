@@ -38,7 +38,7 @@ const SideBottombars= ()=>{
     const iconArray = [
       { label: "Home", icon: <MdHomeFilled size={25} /> },
       { label: "Search", icon: <AiOutlineSearch size={25} /> },
-      { label: "Explore", icon: <MdOutlineExplore size={25} /> },
+      { label: "Explore", icon: <a href="/client/login" className="text-decoration-none text-reset"><MdOutlineExplore size={25} /></a> },
       { label: "Reels", icon: <SiYoutubeshorts size={25} /> },
       { label: "Messenger", icon: <RiMessengerLine size={25} /> },
       { label: "Love", icon: <FaRegHeart size={25} /> },
@@ -46,7 +46,7 @@ const SideBottombars= ()=>{
     ];
     const iconArrayBottom = [
       { label: "Home", icon: <MdHomeFilled size={25} /> },
-      { label: "Explore", icon: <MdOutlineExplore size={25} /> },
+      { label: "Explore", icon: <a href="/client/login" className="text-decoration-none text-reset"><MdOutlineExplore size={25} /></a> },
       { label: "Create", icon: <LuPlusSquare size={25} /> },
       { label: "Reels", icon: <SiYoutubeshorts size={25} /> },
       { label: "Messenger", icon: <RiMessengerLine size={25} /> },
@@ -110,7 +110,7 @@ const SideBottombars= ()=>{
       </div>
       <div className=" allIcon m-2 p-2">
         <PiList size={25} />
-        <span className="p-2 ps-2 d-none d-xl-inline">More</span>
+        <span className="p-2 ps-2 d-none d-xl-inline text-center">More</span>
       </div>
     </div>
   </div>    

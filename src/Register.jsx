@@ -239,7 +239,7 @@ const Register = () => {
         >
           Don't have an account ?
           <span className="fw-bold text-primary">
-            <a href="/client/profile" className="text-decoration-none ms-2">
+            <a href="/client/login" className="text-decoration-none ms-2">
               Log in
             </a>
           </span>

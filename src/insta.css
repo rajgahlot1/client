@@ -112,7 +112,7 @@ z-index: 10;
     .centerOrsuggestion {
         margin-top: 60px;
     }
-.header{position:fixed; border-bottom: 1px solid rgba(0, 0, 0, 0.219); top:0;}
+.header{position:fixed; border-bottom: 1px solid rgba(0, 0, 0, 0.219); top:0; z-index: 5;}
 .header .svgs{
     width:395px
 }
