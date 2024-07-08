@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import facebookLogo from "./Imgs/facebookLogo.jpeg";
 import { ImageContent } from "./Login";
+import { Link } from "react-router-dom";
 const Register = () => {
   const navigate = useNavigate();
   const [data, setdata] = useState({

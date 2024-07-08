@@ -1,7 +1,7 @@
 import "./insta.css";
 import "bootstrap/dist/css/bootstrap.css";
 import insta from "./Imgs/logo.png";
-import {Center} from "./Center";
+import {Center} from "./Center"; 
 import { Link } from "react-router-dom";
 import Suggestion from "./Suggestion";
 import { MdOutlineExplore, MdHomeFilled } from "react-icons/md";
@@ -44,7 +44,7 @@ const SideBottombars= ()=>{
       { label: "Love", icon: <FaRegHeart size={25} /> },
       { label: "Create", icon: <LuPlusSquare size={25} /> },
     ];
-    const iconArrayBottom = [
+     const iconArrayBottom = [
       { label: "Home", icon: <MdHomeFilled size={25} /> },
       { label: "Explore", icon: <Link href="/client/login" className="text-decoration-none text-reset"><MdOutlineExplore size={25} /></Link> },
       { label: "Create", icon: <LuPlusSquare size={25} /> },
@@ -76,6 +76,7 @@ const SideBottombars= ()=>{
         style={{ height: "70px", width: "160px" }}
         alt=""
       />
+    
     </div>
     <div 
       className="position-fixed position-md-relative d-flex d-md-block flex-row justify-content-around mainIcons"
@@ -147,7 +148,7 @@ const HeadBar=()=>{
             backgroundColor: "rgba(51, 49, 49, 0.351)",
           }}
         >
-          <LinkiOutlineSearch size={18} className="ms-1 " />
+          <AiOutlineSearch size={18} className="ms-1 " />
           <input
             className="text-dark "
             type="text"
@@ -159,8 +160,10 @@ const HeadBar=()=>{
               backgroundColor: "transparent",
             }}
           />
-        </div><RiMessengerLine size={23} className="m-2 d-sm-none"/>
+        </div>
         <FaRegHeart size={20} className="m-2" />
+        <RiMessengerLine size={23} className="m-2 d-sm-none"/>
+        
       </div>
     </div>
 

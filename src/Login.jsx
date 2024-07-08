@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 // import { AuthContext } from './context/AuthContext';
 import login1 from "./Imgs/loginimage1.png";
 import loginimage from "./Imgs/loginimage.png";
