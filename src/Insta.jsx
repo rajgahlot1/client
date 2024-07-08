@@ -18,8 +18,9 @@ import {PostData} from './Center'
 const Insta = () => {
   return (
     <>
+     <HeadBar/>   
 <SideBottombars/>
-      <div className="centerOrsuggestion position-relative d-flex  justify-content-around ">
+      <div className="centerOrsuggestion">
         <div className="center-main">
         <Center />
         <PostData/>
@@ -32,7 +33,6 @@ const Insta = () => {
   );
 };
 const SideBottombars= ()=>{
-  
   const [iconData, setIconData] = useState([]);
   useEffect(() => {
     const iconArray = [
@@ -60,15 +60,12 @@ const SideBottombars= ()=>{
       }
     };
     handleResize();
-    // Add event listener
     window.addEventListener("resize", handleResize);
-    // Clean up event listener on component unmount
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return(
-    <div id="slideBar" className="position-fixed">
-<HeadBar/>    
+    <div id="slideBar" className="position-fixed" style={{zIndex:"5"}}> 
     <div className="allIcon m-2">
       <div className="d-none d-md-block p-2 ps-2 d-xl-none">
         <FaInstagram size={25} />
@@ -80,13 +77,12 @@ const SideBottombars= ()=>{
         alt=""
       />
     </div>
-    <div
-      style={{ zIndex: "5" }}
+    <div 
       className="position-fixed position-md-relative d-flex d-md-block flex-row justify-content-around mainIcons"
     >
       {iconData.map((val, ind) => {
         return (
-          <div key={ind} className={`allIcon m-2 ${ind===4? "d-none d-sm-block": ""} `}>
+          <div key={ind} className={`allIcon m-2 ${ind===4? "d-none d-sm-block": ""}`}>
             <div className="p-2">
               {val.icon}
               <span className="ps-2 d-none d-xl-inline">{val.label}</span>
@@ -122,7 +118,7 @@ const SideBottombars= ()=>{
 }
 const HeadBar=()=>{
   return(
-<div className="pt-2 ms-1 pb-2 header bg-white d-md-none position-fixed d-flex align-items-center w-100 justify-content-between">
+<div className="pt-2 ms-1 pb-2 header bg-white d-md-none d-flex align-items-center w-100 justify-content-between">
       <div className="allIcon d-flex align-items-center svgs">
         <svg
           aria-label="Instagram"
@@ -144,7 +140,6 @@ const HeadBar=()=>{
         <FaChevronDown size={15} className="" />
       </div>
       <div className="d-flex">
-        {" "}
         <div
           className="d-sm-flex align-items-center flex-row d-none"
           style={{
