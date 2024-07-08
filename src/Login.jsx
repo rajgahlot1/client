@@ -174,9 +174,9 @@ const Login = () => {
         <div className="text-center border border-1 pt-3 pb-3 w-100">
           Don't have an account ?{" "}
           <span className="fw-bold text-primary">
-            <a href="/client/register" className="text-decoration-none">
+            <Link to="/client/register" className="text-decoration-none">
               Sign up
-            </a>
+            </Link>
           </span>
         </div>
         <div className="text-center p-3">Get the app </div>

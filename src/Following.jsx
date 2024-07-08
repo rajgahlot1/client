@@ -15,7 +15,7 @@ const Following = () => {
       className="followings text-white position-relative w-100 gap-4 d-flex align-items-around justify-content-around p-2"
       style={{ maxWidth: "530px", zIndex: "22" }}
     >
-      {peopleImgs.slice(0, 6).map((val, ind) => {
+      {peopleImgs.slice(0, 8).map((val, ind) => {
         return (
           <div key={ind} className="d-flex flex-column align-items-center">
             <Link to="/client/profile" className="text-decoration-none">

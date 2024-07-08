@@ -38,7 +38,7 @@ const SideBottombars= ()=>{
     const iconArray = [
       { label: "Home", icon: <MdHomeFilled size={25} /> },
       { label: "Search", icon: <AiOutlineSearch size={25} /> },
-      { label: "Explore", icon: <a href="/client/login" className="text-decoration-none text-reset"><MdOutlineExplore size={25} /></a> },
+      { label: "Explore", icon: <Link href="/client/login" className="text-decoration-none text-reset"><MdOutlineExplore size={25} /></Link> },
       { label: "Reels", icon: <SiYoutubeshorts size={25} /> },
       { label: "Messenger", icon: <RiMessengerLine size={25} /> },
       { label: "Love", icon: <FaRegHeart size={25} /> },
@@ -46,7 +46,7 @@ const SideBottombars= ()=>{
     ];
     const iconArrayBottom = [
       { label: "Home", icon: <MdHomeFilled size={25} /> },
-      { label: "Explore", icon: <a href="/client/login" className="text-decoration-none text-reset"><MdOutlineExplore size={25} /></a> },
+      { label: "Explore", icon: <Link href="/client/login" className="text-decoration-none text-reset"><MdOutlineExplore size={25} /></Link> },
       { label: "Create", icon: <LuPlusSquare size={25} /> },
       { label: "Reels", icon: <SiYoutubeshorts size={25} /> },
       { label: "Messenger", icon: <RiMessengerLine size={25} /> },
@@ -147,7 +147,7 @@ const HeadBar=()=>{
             backgroundColor: "rgba(51, 49, 49, 0.351)",
           }}
         >
-          <AiOutlineSearch size={18} className="ms-1 " />
+          <LinkiOutlineSearch size={18} className="ms-1 " />
           <input
             className="text-dark "
             type="text"
