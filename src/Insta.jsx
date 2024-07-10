@@ -2,7 +2,7 @@ import "./insta.css";
 import "bootstrap/dist/css/bootstrap.css";
 import insta from "./Imgs/logo.png";
 import {Center} from "./Center"; 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Suggestion from "./Suggestion";
 import { MdOutlineExplore, MdHomeFilled } from "react-icons/md";
 import { AiOutlineSearch } from "react-icons/ai";
@@ -16,6 +16,23 @@ import profile from "./Imgs/profile.jpg";
 import { useState, useEffect } from "react";
 import {PostData} from './Center'
 const Insta = () => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const fetchInstaId = async () => {
+      try {
+        const InstaId = await localStorage.getItem('InstaUserId');
+        console.log(InstaId);
+        if (!InstaId) {
+          navigate('/client/register');
+        }
+      } catch (error) {
+        console.log('Error fetching InstaUserId from localStorage:', error);
+      }
+    };
+
+    fetchInstaId();
+  }, [navigate]);
   return (
     <>
      <HeadBar/>   

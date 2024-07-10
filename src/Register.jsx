@@ -13,7 +13,6 @@ const Register = () => {
   });
   const dataHandler = (e) => {
     const { name, value } = e.target;
-    console.log(name, value);
     setdata({ ...data, [name]: value });
   };
   const submitHandler = async (e) => {
@@ -26,6 +25,9 @@ const Register = () => {
         body: JSON.stringify(data),
       });
       if (response.ok) {
+        const responseData = await response.json(); // Parse response body as JSON
+        const InstaUserId = responseData.user._id // Assuming _id is returned from backend
+        localStorage.setItem('InstaUserId', InstaUserId);
         setdata({
           numberoremail: "",
           fullname: "",
@@ -145,6 +147,7 @@ const Register = () => {
                   value={data.fullname}
                   className="position-relative mt-2 ps-2"
                   type="text"
+                  required
                   name="fullname"
                   autoComplete="new-password"
                   style={{
@@ -172,6 +175,7 @@ const Register = () => {
                   className="position-relative mt-2 ps-2"
                   type="text"
                   name="username"
+                  required
                   autoComplete="new-password"
                   style={{
                     height: "38px",
@@ -197,6 +201,7 @@ const Register = () => {
                   className="position-relative mt-2 ps-2"
                   type="password"
                   name="password"
+                  required
                   autoComplete="new-password"
                   style={{
                     height: "38px",

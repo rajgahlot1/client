@@ -14,7 +14,7 @@ import facebookLogo from "./Imgs/facebookLogo.jpeg";
 const Login = () => {
   const navigate = useNavigate();
   const [data, setdata] = useState({
-    name: "",
+    username: "",
     password: "",
   });
   // const {isFetching, dispatch}= useContext(AuthContext)
@@ -24,7 +24,6 @@ const Login = () => {
   };
   const submitHandler = async (e) => {
     e.preventDefault();
-    console.log(data);
     try {
       const response = await fetch("http://localhost:5000/insta/login", {
         method: "POST",
@@ -86,16 +85,15 @@ const Login = () => {
                 style={{ borderRadius: "5px" }}
               >
                 <label
-                  for="name"
-                  className={`position-absolute logininput ${data.name.length> 0? "move":""}`}
+                  className={`position-absolute logininput ${data.username.length> 0? "move":""}`}
                 >
                   Phone number, username, email
                 </label>
                 <input
-                  value={data.name}
+                  value={data.username}
                   className="position-relative ps-2 mt-2"
                   type="text"
-                  name="name"
+                  name="username"
                   placeholder=""
                   required
                   autoComplete="new-password"
@@ -126,6 +124,7 @@ const Login = () => {
                   type="password"
                   name="password"
                   autoComplete="new-password"
+                  required
                   style={{
                     height: "38px",
                     width: "268px",
