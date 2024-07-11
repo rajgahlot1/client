@@ -2,6 +2,7 @@
   "name": "client",
   "homepage": "https://rajgahlot1.github.io/client",
   "version": "0.1.0",
+  "proxy": "http://localhost:5000",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
