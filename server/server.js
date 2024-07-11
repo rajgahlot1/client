@@ -5,7 +5,7 @@ const mongoose= require("mongoose")
 const router= require('./routes/route')
 const app= express();
 corsOptions={
-    origin:"http://localhost:3000",
+    origin:"https://rajgahlot1.github.io",
     method:"GET, PUT, POST, DELETE,PATC, HEAD",
     credentials: true
 }
