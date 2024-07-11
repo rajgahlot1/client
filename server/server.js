@@ -4,7 +4,7 @@ const cors= require("cors")
 const mongoose= require("mongoose")
 const router= require('./routes/route')
 const app= express();
-const allowedOrigins = ['http://localhost:3000', 'https://rajgahlot1.github.io/'];
+const allowedOrigins = ['http://localhost:3000', 'https://rajgahlot1.github.io'];
 corsOptions={
     origin: (origin, callback) => {
         if (allowedOrigins.includes(origin) || !origin) {
@@ -13,7 +13,7 @@ corsOptions={
             callback(new Error('Not allowed by CORS'));
         }
     },
-    method:"GET, PUT, POST, DELETE,PATC, HEAD",
+    method:"GET, PUT, POST, DELETE,PATCH, HEAD",
     credentials: true
 }
 app.use(cors(corsOptions));
