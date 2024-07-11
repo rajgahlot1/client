@@ -24,6 +24,7 @@ const Insta = () => {
         const InstaId = await localStorage.getItem('InstaUserId');
         console.log(InstaId);
         if (!InstaId) {
+          // localStorage.removeItem('InstaUserId', InstaId);
           navigate('/client/register');
         }
       } catch (error) {
